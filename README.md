@@ -1,7 +1,7 @@
 # FileReport
  A home test for HADASIM
-the input: the given file : dickens (attached)
-the output: 
+The input: the given file : dickens (attached)
+The output: 
 
 The report:
 
