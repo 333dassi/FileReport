@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
@@ -12,7 +12,7 @@ namespace FileDataReport
     {
 
         const string FILENAME = "dickens.txt";
-        const string FILPATH = "C:/Users/דסי/Desktop/Hadasim_homeTest/" + FILENAME;
+        string FILPATH;
         int countLines, countWords, countUniqueWords , commonWord = 0;
         string theCommonWord = "";
         string s = "";
@@ -21,6 +21,10 @@ namespace FileDataReport
         int[] sentenceLengths = new int[3000];
         int WordsPersentCounter, WordsPerLineCounter, WordsNextsentence, maxSentence = 0;
         double avgSentence;
+        public Read(string file)
+        {
+            FILPATH = file;
+        }
     
         public void Reporting()
         {
@@ -43,7 +47,7 @@ namespace FileDataReport
             {
                 Console.WriteLine(MyExcep.ToString());
             } 
-
+            
             foreach (KeyValuePair<string, int> u in Unique_words)//run over the dictionery
             {
                 CountNUmOfWords(u);
