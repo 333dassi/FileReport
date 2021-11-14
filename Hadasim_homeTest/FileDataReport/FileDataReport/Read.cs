@@ -43,9 +43,7 @@ namespace FileDataReport
             {
                 Console.WriteLine(MyExcep.ToString());
             } 
-            // אבל בגלל שיש לי 3 דברים בתוך הפוראיטש היה עדיף לעשות פוראיטש מאשר 3 פעמים לשלוף. יכולתי להמנע מהפואיטש
-            // insted of CountNumOfUniqueWords:
-            //Unique_words.Count(w => w.Value == 1);
+
             foreach (KeyValuePair<string, int> u in Unique_words)//run over the dictionery
             {
                 CountNUmOfWords(u);
